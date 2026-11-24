@@ -2,6 +2,8 @@
 
 A desktop password manager built with **React, Tailwind CSS and Electron**. Your logins are kept in one encrypted file on your computer, protected by a master password that is never stored.
 
+Vault grew out of [password-generator](https://github.com/ibrahimmdef/password-generator), a small vanilla JavaScript app I built in 2025. This version rebuilds it in React and turns a one-off generator into a full password manager.
+
 ![Vault in light mode](docs/screenshots/vault-light.png)
 
 ## Download
