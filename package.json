@@ -1,5 +1,5 @@
 {
-  "name": "password-generator",
+  "name": "vault-app",
   "productName": "Vault",
   "version": "2.0.0",
   "description": "Password manager built with React. Keeps your logins in an encrypted vault.",

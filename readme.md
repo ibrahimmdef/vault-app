@@ -6,7 +6,7 @@ A desktop password manager built with **React, Tailwind CSS and Electron**. Your
 
 ## Download
 
-Get the latest version from the [Releases page](https://github.com/ibrahimmdef/password-generator/releases/latest):
+Get the latest version from the [Releases page](https://github.com/ibrahimmdef/vault-app/releases/latest):
 
 | System | File | How to run |
 | --- | --- | --- |
@@ -57,8 +57,8 @@ Your vault is saved in `%APPDATA%\Vault` on Windows and `~/.config/Vault` on Lin
 ## Getting started
 
 ```bash
-git clone https://github.com/ibrahimmdef/password-generator.git
-cd password-generator
+git clone https://github.com/ibrahimmdef/vault-app.git
+cd vault-app
 npm install
 npm run electron        # build and open the desktop app
 ```
