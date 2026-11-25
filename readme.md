@@ -79,7 +79,6 @@ npm run dev
 | `npm test` | Run the unit tests |
 | `npm run package:linux` | Package a Linux app into `release/` |
 | `npm run package:win` | Package a Windows app into `release/` |
-| `npm run install:linux` | Package and install for your user, with an entry in the app launcher |
 
 ## How it's built
 

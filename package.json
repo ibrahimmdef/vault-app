@@ -10,9 +10,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "electron": "npm run build && electron .",
-    "package:win": "npm run build && electron-packager . Vault --platform=win32 --arch=x64 --out=release --overwrite --ignore=^/src --ignore=^/public --ignore=^/release --ignore=^/docs --ignore=^/scripts --ignore=^/graphify-out",
-    "install:linux": "npm run package:linux && bash scripts/install-linux.sh",
-    "package:linux": "npm run build && electron-packager . Vault --platform=linux --arch=x64 --out=release --overwrite --ignore=^/src --ignore=^/public --ignore=^/release --ignore=^/docs --ignore=^/scripts --ignore=^/graphify-out",
+    "package:win": "npm run build && electron-packager . Vault --platform=win32 --arch=x64 --out=release --overwrite --ignore=^/src --ignore=^/public --ignore=^/release --ignore=^/docs --ignore=^/graphify-out",
+    "package:linux": "npm run build && electron-packager . Vault --platform=linux --arch=x64 --out=release --overwrite --ignore=^/src --ignore=^/public --ignore=^/release --ignore=^/docs --ignore=^/graphify-out",
     "electron:dev": "electron . --dev-url=http://localhost:5173"
   },
   "keywords": [
