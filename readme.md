@@ -6,6 +6,10 @@ Vault grew out of [password-generator](https://github.com/ibrahimmdef/password-g
 
 ![Vault in light mode](docs/screenshots/vault-light.png)
 
+## Try it
+
+**[Open the web demo →](https://vault-app-4zo.pages.dev)** Click "Add Sample Logins" to explore with example data. In the browser, the vault is saved, encrypted, in that browser only. The layout is made for desktop screens.
+
 ## Download
 
 Get the latest version from the [Releases page](https://github.com/ibrahimmdef/vault-app/releases/latest):

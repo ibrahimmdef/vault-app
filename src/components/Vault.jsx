@@ -1,5 +1,6 @@
 import { useMemo, useRef, useState } from "react";
 import { useVault } from "../state/VaultContext";
+import { isDesktop } from "../state/storage";
 import { analyzeHealth } from "../lib/health";
 import { filterLogins } from "../lib/filter";
 import { hostOf } from "../lib/vault";
@@ -126,13 +127,13 @@ export function Vault() {
             <Button variant="primary" onClick={() => setMode("pick")}>
               New Login
             </Button>
-            {import.meta.env.DEV && (
+            {(import.meta.env.DEV || !isDesktop) && (
               <Button onClick={() => actions.importLogins(sampleLogins())}>Add Sample Logins</Button>
             )}
           </>
         }
       >
-        Add the accounts you use, and their passwords stay encrypted on this computer.
+        Add the accounts you use, and their passwords stay encrypted {isDesktop ? "on this computer" : "in this browser"}.
       </EmptyState>
     );
   } else {

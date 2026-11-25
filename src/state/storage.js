@@ -33,3 +33,6 @@ const browserStorage = {
 const electronStorage = typeof window !== "undefined" ? window.vaultFile : undefined;
 
 export const storage = electronStorage ?? browserStorage;
+
+/** True in the desktop app, false in the browser (web demo). */
+export const isDesktop = Boolean(electronStorage);

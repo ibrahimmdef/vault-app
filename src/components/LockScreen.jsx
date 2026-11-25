@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { useVault } from "../state/VaultContext";
+import { isDesktop } from "../state/storage";
 import { WrongPasswordError } from "../lib/crypto";
 import { Icon } from "./Icon";
 import { StrengthMeter } from "./StrengthMeter";
@@ -17,6 +18,14 @@ export function LockScreen() {
           <Icon name="lock" className="size-[22px]" />
         </span>
         {status === "setup" ? <CreateVault /> : <UnlockVault />}
+        {!isDesktop && (
+          <p className="mt-2 border-t border-line pt-4 text-sm text-ink-3">
+            This is the web demo. Your vault is saved, encrypted, in this browser only.{" "}
+            <a className="text-ink-2 underline" href="https://github.com/ibrahimmdef/vault-app/releases/latest">
+              Get the desktop app
+            </a>
+          </p>
+        )}
       </div>
     </main>
   );
