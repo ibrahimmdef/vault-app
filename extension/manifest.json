@@ -3,6 +3,7 @@
   "name": "Vault",
   "version": "0.1.0",
   "description": "Fill your Vault passwords in Chrome.",
+  "permissions": ["activeTab"],
   "action": {
     "default_popup": "popup.html",
     "default_title": "Vault"
